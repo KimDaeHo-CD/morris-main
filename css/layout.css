@@ -298,3 +298,10 @@ body {
   overflow: hidden;
   flex-grow: 1;
 }
+
+.brand .slider .pagination .swiper-pagination-bullet {
+  width: 500px;
+  height: auto;
+  background: none;
+  border-radius: 0;
+}
