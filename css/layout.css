@@ -225,6 +225,7 @@ body {
   width: 90%;
 }
 .product .pagination .swiper-pagination-progressbar-fill {
+<<<<<<< HEAD
   background-color: #000000;
 }
 
@@ -304,4 +305,30 @@ body {
   height: auto;
   background: none;
   border-radius: 0;
+=======
+  background-color: chocolate;
+}
+.product .title-box p {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.h2txt {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px;
+  background-color: #eee;
+}
+.h2txt h1 {
+  font-size: 80px;
+}
+.h2txt p {
+  font-size: 20px;
+}
+
+.cate {
+  border: 3px solid #00cc55;
+  background-color: #ccc;
+>>>>>>> f942808607b8d026c5566c14b743a59685e62795
 }
