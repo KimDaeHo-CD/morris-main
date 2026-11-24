@@ -17,6 +17,11 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+.heading03 {
+  font-size: 54px;
+  font-weight: 500;
+}
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
@@ -139,7 +144,8 @@ body {
     }
   }
 }
-.product {
+.product,
+.press {
   overflow: hidden;
   padding: 200px 0 0;
   background-color: $light-gray;
@@ -305,6 +311,7 @@ body {
 .brand {
   padding: 150px 0;
   .slider {
+    margin-top: 100px;
     .mask {
       overflow: hidden;
       margin-top: 50px;
@@ -320,20 +327,22 @@ body {
           width: 100%;
         }
       }
-    }
-    .info {
-      margin-top: 100px;
-      .title {
-        font-size: 32px;
-        font-weight: 500;
-      }
-      .btn {
-        @extend %button-base;
-        display: inline-flex;
-        align-items: center;
-        border-radius: 100px;
-        border: 1px solid #333;
-        margin-top: 50px;
+      .info-box {
+        .info {
+          margin-top: 100px;
+          .title {
+            font-size: 32px;
+            font-weight: 500;
+          }
+          .btn {
+            @extend %button-base;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #333;
+            margin-top: 50px;
+          }
+        }
       }
     }
     .pagination {
@@ -346,15 +355,70 @@ body {
         height: auto;
         border-radius: 0;
         background: none;
-        padding: 10px 0;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
+        padding: 10px 30px;
+        // border-top: 1px solid #333;
+        border-bottom: 2px solid transparent;
         &-active {
           opacity: 1;
+          border-bottom: 2px solid #333;
         }
         img {
           height: 50px;
         }
+      }
+    }
+  }
+}
+.merit {
+  background-image: url("../images/main/merit_bg.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  h3 {
+    text-align: center;
+    margin: 50px 0;
+    line-height: 1.25;
+  }
+  .list {
+    display: flex;
+    li {
+      // flex-basis: 25%;
+      // flex-shrink: 0;
+      // flex-grow: 0;
+      flex: 0 0 25%;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 50px 0;
+      font-size: 20px;
+      &:first-child {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      span {
+        font-size: 64px;
+        padding: 50px;
+        border-radius: 300px;
+        background-color: rgba(255, 255, 255, 0.25);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// 프레스 특정 부분만 재정의
+.press {
+  .slider {
+    li {
+      &:hover {
+        .img-box {
+          border-radius: 0;
+        }
+      }
+      .date-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .info {
+        @include ellipsis(2);
       }
     }
   }

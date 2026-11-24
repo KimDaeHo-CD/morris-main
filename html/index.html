@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward,arrow_back,arrow_forward"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward,arrow_back,arrow_forward,psychology,emoji_objects,diversity_3,cycle"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
@@ -346,6 +346,126 @@
         </div>
       </div>
     </section>
+    <section class="merit">
+      <div class="container">
+        <h2 class="heading02">MERIT</h2>
+        <h3 class="heading03">
+          Precise in Technology, <br />
+          Warm in Design
+        </h3>
+        <ul class="list">
+          <li>
+            <span class="material-symbols-outlined"> psychology </span>
+            <p>
+              Precision Technology <br />
+              and Trusted Quality
+            </p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> emoji_objects </span>
+            <p>
+              Precision Technology <br />
+              and Trusted Quality
+            </p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> diversity_3 </span>
+            <p>
+              Precision Technology <br />
+              and Trusted Quality
+            </p>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> cycle </span>
+            <p>
+              Precision Technology <br />
+              and Trusted Quality
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Press -->
+    <section class="press">
+      <div class="container">
+        <div class="title-box">
+          <h2 class="heading02">NEW PRODUCT</h2>
+          <p class="desc">
+            Redefining every writing moment <br />
+            — the new collection from Morris
+          </p>
+        </div>
+        <div class="slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press01.jpg" alt="" />
+                </div>
+                <div class="date">
+                  <span class="category">MEDIA</span>
+                  <span class="date">2026.11.23</span>
+                </div>
+                <div class="info">Pen Drawing with MORRIS</div>
+                <div class="info">
+                  모리스, 딸기밥 협업 글리터 형광펜 11월 출시…스티커로 완성하는 ‘펜꾸’모리스, 딸기밥 협업 글리터 형광펜 11월 출시…스티커로 완성하는
+                  ‘펜꾸’모리스, 딸기밥 협업 글리터 형광펜 11월 출시…스티커로 완성하는 ‘펜꾸’
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product02.jpg" alt="" />
+                </div>
+                <div class="info">모리스, 딸기밥 협업 글리터 형광펜 11월 출시…스티커로 완성하는 ‘펜꾸’</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press03.jpg" alt="" />
+                </div>
+                <div class="info">모리스, 딸기밥 협업 글리터 형광펜 11월 출시…스티커로 완성하는 ‘펜꾸’</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product03.jpg" alt="" />
+                </div>
+                <div class="info">Prime Glitter Highlighter S</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/press04.jpg" alt="" />
+                </div>
+                <div class="info">Prime Glitter Highlighter S</div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product05.jpg" alt="" />
+                </div>
+                <div class="info">Prime Glitter Highlighter S</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination-box">
+          <div class="pagination"></div>
+          <div class="nav">
+            <span class="material-symbols-outlined btn-prev"> arrow_back </span>
+            <span class="material-symbols-outlined btn-next"> arrow_forward </span>
+          </div>
+        </div>
+
+        <a href="" class="btn btn-link">ALL PRODUCTS <span class="material-symbols-outlined"> arrow_outward </span></a>
+      </div>
+    </section>
     <script>
       const customBullets = [
         `
@@ -460,6 +580,19 @@
           renderBullet: function (index, className) {
             return `<div class="${className}">${brandCustomBullets[index]}</div>`;
           },
+        },
+      });
+      const pressSlider = new Swiper(".press .slider", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        speed: 1000,
+        pagination: {
+          el: ".press .pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".press .pagination-box .btn-next",
+          prevEl: ".press .pagination-box .btn-prev",
         },
       });
     </script>
